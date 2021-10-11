@@ -1,0 +1,140 @@
+.header {
+    position: relative;
+    background-color: $colorGreen;
+    padding: 24px 0;
+    color: #2e2e2e;
+
+    @media(max-width: $md5 + px) {
+        padding: 17px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        padding-left: 17px;
+        margin-right: 10px;
+        flex: 3;
+
+        @media(max-width: $md3 + px) {
+            padding-left: 0px;
+        }
+
+        @media(max-width: $md5 + px) {
+            flex: 0;
+        }
+
+        img {
+            display: block;
+            max-width: 232px;
+            min-width: 154px;
+            width: 100%;
+            height: auto;
+
+            @media(max-width: $md5 + px) {
+                max-width: 154px;
+            }
+        }
+    }
+
+    &__languages {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        margin: 0 47px 0 0px;
+        font-size: 14px;
+        line-height: 16px;
+        flex: 1;
+
+        @media(max-width: $md3 + px) {
+            font-size: 18px;
+            line-height: 20px;
+            flex: 0;
+            margin-right: 35px;
+        }
+
+        @media(max-width: $md4 + px) {
+            margin-right: 15px;
+        }
+
+        @media(max-width: $md5 + px) {
+            display: none;
+        }
+    }
+
+    &__lang {
+        color: #fff;
+        transition: all .2s;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+
+        &.active {
+            color: #2e2e2e;
+        }
+
+        &:not(:last-child) {
+            margin-right: 15px;
+
+            @media(max-width: $md3 + px) {
+                margin-right: 17px;
+            }
+        }
+
+        &:hover {
+            color: #2e2e2e;
+        }
+    }
+
+    &__end {}
+
+
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btns-btn {
+        padding: 12px 25px 12px 30px;
+        background-color: $colorDark;
+
+        &:hover {
+            background-color: $colorDark;
+            color: #fff;
+        }
+
+        @media(max-width: $md3 + px) {
+            padding: 12px 34px 12px 31px;
+        }
+    }
+
+}
+
+.btn-to-cabinet {
+    @media (max-width: $md5 + px) {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+
+        span {
+            display: none;
+        }
+    }
+
+
+    .svg-cabinet {
+        display: none;
+        fill: #000;
+        stroke: #000;
+        width: 25px;
+        height: 25px;
+
+        @media (max-width: $md5 + px) {
+            display: block;
+        }
+    }
+}

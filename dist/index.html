@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="css/vendor.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="site-container">
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__languages">
+                <a href="#" class="header__lang">ua</a>
+                <a href="#" class="header__lang active">ru</a>
+            </div>
+            <div class="header__end">
+                <div class="header__btns">
+                    <a href="#" class="header__btns-btn btn btn-to-cabinet">
+                        <span class="header__cabinet-descr">Особистий кабінет</span>
+                        <svg class="svg-cabinet">
+                            <use xlink:href="./img/icons/icons.svg#cabinet"></use>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section class="credit-calc">
+    <div class="container">
+        <div class="credit-calc__wrapper">
+            <div class="credit-calc__content">
+                <div class="credit-calc__title">
+                    <div class="credit-calc__title-img">
+                        <img src="img/lemon.png" alt="">
+                    </div>
+                    <div class="credit-calc__title-text">
+                        <span class="credit-calc__title-large">FRE$H
+                            CA$H</span>
+                        <span class="credit-calc__title-small">Це кредит,
+                            а не позика</span>
+                    </div>
+                </div>
+                <div class="credit-calc__description">
+                    <div class="credit-calc__description-text credit-calc__description-text_white">
+                        <span>Свіжі гроші</span>
+                    </div>
+                    <div class="credit-calc__description-text credit-calc__description-text_yellow">
+                        <span>на свіжі бажання</span>
+                    </div>
+                </div>
+            </div>
+            <div class="credit-calc__calculation calculation">
+                <div class="calculation__header">
+                    Онлайн-кредит на картку
+                    за 10 хвилин <span class="back-yellow-figure"><span>Гроші на карті в 9:34</span></span>
+                </div>
+                <div class="calculation__body">
+                    <div class="calculation-item">
+                        <div class="calculation-item__up">
+                            <div class="calculation-item__label">Сума кредиту</div>
+                            <div class="calculation-item__inp-block">
+                                <input id="calculation-summ" type="text" readonly value="20 000 грн"
+                                    class="calculation-item__input">
+                            </div>
+                        </div>
+                        <div class="calculation-item__range-slider">
+                            <input id="calculation-range-summ" type="range" min="3000" max="30000" step="1000"
+                                value="20000">
+                        </div>
+                    </div>
+                </div>
+                <div class="calculation__offer-block">
+                    <div class="calculation-offer">
+                        <div class="calculation-offer__item calculation-offer__item--pay">
+                            <div class="calculation-offer__label">Щомісячний платіж</div>
+                            <div class="calculation-offer__value">
+                                <span class="calculation-offer__value-summ">9453 грн</span>
+                                <span class="calculation-offer__value-info">315 грн. на день</span>
+                            </div>
+                        </div>
+                        <div class="calculation-offer__item mb-0">
+                            <div class="calculation-offer__label">Кількість платежів</div>
+                            <div class="calculation-offer__value">12</div>
+                        </div>
+                        <div class="calculation-offer__descr">Зручний платіж один раз на місяць, ви повністю погасите
+                            кредит за 12 місяців</div>
+                    </div>
+                </div>
+                <div class="calculation__footer">
+                    <button type="button" class="calculation__footer-btn btn">Отримай гроші зараз</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="relative-calc-block"></div>
+            <section class="any-card">
+    <div class="container">
+        <h2 class="section__title any-card__title">Кредит на картку будь-якого українського банку</h2>
+        <div class="any-card__steps">
+            <div class="any-card__step">
+                <div class="any-card__step-icon">
+                    <img src="img/pappers.svg" alt="">
+                </div>
+                <div class="any-card__step-label">Заявка</div>
+                <div class="any-card__step-text">Заповнюй заявку онлайн</div>
+            </div>
+            <div class="any-card__step">
+                <div class="any-card__step-icon">
+                    <img src="img/contract.svg" alt="">
+                </div>
+                <div class="any-card__step-label">Договір</div>
+                <div class="any-card__step-text">Підписуй договір онлайн</div>
+            </div>
+            <div class="any-card__step">
+                <div class="any-card__step-icon">
+                    <img src="img/wallet.svg" alt="">
+                </div>
+                <div class="any-card__step-label">Гроші вже у тебе!</div>
+                <div class="any-card__step-text">Отримуй гроші на свою картку</div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="why">
+    <div class="container">
+        <div class="why__inner inner-block">
+            <h2 class="section__title why__title">Чому варто взяти гроші у нас</h2>
+            <div class="why__wrapper">
+                <div class="why__item why__item--first">
+                    <div class="why__item-title"><span class="yellow-back"><span>Cправжній</span></span> банк</div>
+                    <div class="why__item-text">Це не позика, без підступу і прихованих відсотків. Все прозоро, зручно,
+                        швидко і надійно!</div>
+                </div>
+                <div class="why__item why__item--second">
+                    <div class="why__item-title">Гроші <span class="yellow-back"><span>за 10 хвилин</span></span> на
+                        картку
+                        будь-якого банку</div>
+                    <div class="why__item-text">Більше не потрібно їхати до відділення банку - оформлюй кредит онлайн.
+                        Гроші зарахуємо на картку будь-якого українського банку.</div>
+                </div>
+                <div class="why__item why__item--third">
+                    <div class="why__item-title">Прості платежі та <span class="yellow-back"><span>вигідні
+                                умови</span></span></div>
+                    <div class="why__item-text">Ти отримаєш чесну процентну ставку і платіж раз на місяць. Плати, як
+                        зручно: карткою в особистому кабінеті або через термінали Приватбанку без комісії!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="questions">
+    <div class="container">
+        <div class="questions__inner inner-block">
+            <h2 class="section__title questions__title">Нічого не приховуємо</h2>
+            <div class="questions-item">
+                <div class="questions-item__header">
+                    <div class="questions-item__left">
+                        <div class="questions-item__title">Умови та попередження</div>
+                    </div>
+                    <div class="questions-item__arrow">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#handle-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="questions-item__body">
+                    <ul class="questions-item__documents">
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Умови</span> (розгорнутий розрахунок кредиту)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Попередження </span>(про можливі наслідки для клієнта)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="questions-item">
+                <div class="questions-item__header">
+                    <div class="questions-item__left">
+                        <div class="questions-item__title">Чи можна погасити кредит достроково?
+                        </div>
+                    </div>
+                    <div class="questions-item__arrow">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#handle-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="questions-item__body">
+                    <div class="questions-item__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim vero sit quidem provident ea
+                        at
+                        itaque accusantium expedita deserunt dolor libero, non earum eaque quia quisquam nam voluptatum
+                        ad!
+                    </div>
+                </div>
+            </div>
+            <div class="questions-item">
+                <div class="questions-item__header">
+                    <div class="questions-item__left">
+                        <div class="questions-item__title">Погашення кредиту
+                        </div>
+                    </div>
+                    <div class="questions-item__arrow">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#handle-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="questions-item__body">
+                    <ul class="questions-item__documents">
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Условия</span> (развернутый расчет кредита)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Предупреждения</span> (О возможных последствиях для клиента)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="questions-item">
+                <div class="questions-item__header">
+                    <div class="questions-item__left">
+                        <div class="questions-item__title">Вимоги до клієнта
+                        </div>
+                    </div>
+                    <div class="questions-item__arrow">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#handle-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="questions-item__body">
+                    <ul class="questions-item__documents">
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Условия</span> (развернутый расчет кредита)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Предупреждения</span> (О возможных последствиях для клиента)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="questions-item">
+                <div class="questions-item__header">
+                    <div class="questions-item__left">
+                        <div class="questions-item__title">Коли можна подати повторну заявку?
+                        </div>
+                    </div>
+                    <div class="questions-item__arrow">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#handle-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="questions-item__body">
+                    <ul class="questions-item__documents">
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Условия</span> (развернутый расчет кредита)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Предупреждения</span> (О возможных последствиях для клиента)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="questions-item">
+                <div class="questions-item__header">
+                    <div class="questions-item__left">
+                        <div class="questions-item__title">Можливі наслідки
+                        </div>
+                    </div>
+                    <div class="questions-item__arrow">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#handle-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="questions-item__body">
+                    <ul class="questions-item__documents">
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Условия</span> (развернутый расчет кредита)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Предупреждения</span> (О возможных последствиях для клиента)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="questions-item">
+                <div class="questions-item__header">
+                    <div class="questions-item__left">
+                        <div class="questions-item__title">Файли для завантаження
+                        </div>
+                    </div>
+                    <div class="questions-item__arrow">
+                        <svg class="">
+                            <use xlink:href="./img/icons/icons.svg#handle-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="questions-item__body">
+                    <ul class="questions-item__documents">
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Условия</span> (развернутый расчет кредита)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                        <li class="questions-item__doc">
+                            <div class="questions-item__doc-name">
+                                <span class="fw-bold">Предупреждения</span> (О возможных последствиях для клиента)
+                            </div>
+                            <button type="button" data-format=".pdf" class="questions-item__doc-download btn-reset">
+                                .pdf
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+            <section class="repay">
+    <div class="container">
+        <h2 class="section__title questions__title">Сплачуй зручно</h2>
+        <div class="repay__inner">
+            <div class="repay__item">
+                <div class="repay__item-wrapper">
+                    <div class="repay__item-content">
+                        <div class="repay__item-title">В особистому кабінеті</div>
+                        <div class="repay__item-text">Ви можете погасити Ваш кредит онлайн не виходячи з дому. Просто
+                            перейдіть в особистий кабінет і оплатіть займ банківською картою</div>
+                        <div class="repay__item-icon">
+                            <a href="#">
+                                <img src="img/visa.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/mastercard.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/prostir.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="repay__item-images">
+                        <img src="img/macbook.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="repay__item">
+                <a class="repay__link" href="#">
+                    <div class="repay__item-wrapper">
+                        <div class="repay__item-content">
+                            <div class="repay__item-title">Через платіжні термінали</div>
+                            <div class="repay__item-text">Оплата кредиту в терміналі ibox, EasyPay і City24 - це швидко
+                                і зручною. Термінал Ви зможете
+                                знайти термінал в блізжайшіх супермаркеті </div>
+                            <div class="repay__item-icon">
+                                <a href="#">
+                                    <img src="img/city.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/ibox.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/easypay.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="repay__item-images">
+                            <img src="img/Mask.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <ul class="footer__list">
+                    <li class="footer__list-elem">
+                        <a href="#" class="footer__link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="#" class="footer__link">
+                            Реквизиты
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="#" class="footer__link">
+                            Фонд гарантирования вкладов физических лиц
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="#" class="footer__link">
+                            Обратная связь
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-contacts__title">Контакт центр:</div>
+                <div class="footer-contacts__phone">
+                    <a href="tel:380445851487">
+                        +38 (044) 585- 14-87
+                    </a>
+                    <span class="footer-contacts__descrption">(по тарифам оператора)</span>
+                </div>
+                <div class="footer-contacts__phone">
+                    <a href="tel:0800500686">
+                        0 800 500 686
+                    </a>
+                    <span class="footer-contacts__descrption">(по тарифам оператора)</span>
+                </div>
+                <button type="button" class="footer-copy__chat btn-reset">
+                    <span>ОНЛАЙН ЧАТ</span>
+                </button>
+            </div>
+            <div class="footer__right">
+                <div class="footer-socail">
+                    <div class="footer-socail__links">
+                        <div class="footer-socail__label">Мы в социальных сетях:</div>
+                        <div class="footer-social__icons">
+                            <a href="#">
+                                <img src="img/icon/facebook.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/icon/youtube.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-socail__news footer-news">
+                        <form action="#" id="footer-email-form">
+                            <div class="footer-news__label">Підписуйтеся на наші новини!</div>
+                            <div class="footer-news__search">
+                                <input class="footer__input-search" name="email" type="email" type="search">
+                                <button class="btn footer-news__search-btn">
+                                    Підписатись
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer-docs">
+                <div class="footer-docs__list">
+                    <a href="#" class="footer-copy__item">© АТ“ЮНЕКС БАНК”. Участник ФГВФО</a>
+                    <a href="#" class="footer-copy__item">Лицензия НБУ 56 от 28.10.2011</a>
+                    <div class="footer-copy__item">© 2004- 2021, АТ“ЮНЕКС БАНК”</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- <script src="js/vendor.js" defer></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+    integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+    crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+    integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js" type="module"></script>
+<!-- <script src="js/bugs.js" defer></script> -->
+</body>
+
+</html>

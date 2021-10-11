@@ -1,0 +1,118 @@
+.why {
+    padding: 60px 0 60px;
+
+    &__inner {
+        padding: 38px 84px 60px 84px;
+
+        @media(max-width: $md3 + px) {
+            display: block;
+            padding: 48px 80px 48px 80px;
+        }
+
+        @media(max-width: $md4 + px) {
+            display: block;
+            padding: 24px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+
+        @media(max-width: $md3 + px) {
+            display: block;
+        }
+    }
+
+    &__item {
+        padding: 32px;
+        background: #9EF01A;
+        border-radius: 16px;
+
+        @media(max-width: $md3 + px) {
+            &:not(:last-child) {
+                margin-bottom: 48px;
+            }
+        }
+
+        @media(max-width: $md5 + px) {
+            padding: 16px;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__item--first {}
+
+    &__item-title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 27px;
+
+        @media(max-width: $md5 + px) {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__item-text {
+        font-size: 20px;
+        line-height: 23px;
+
+        @media(max-width: $md5 + px) {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    &__item--second {}
+
+    &__item--third {
+        grid-column: 1 / 3;
+    }
+}
+
+.container {}
+
+.inner-block {}
+
+.section {
+
+    &__title {}
+}
+
+.yellow-back {
+    display: inline;
+    position: relative;
+    padding: 0 8px;
+    top: 2px;
+
+    span {
+        position: relative;
+        z-index: 2;
+        bottom: 2px;
+    }
+
+    &::before {
+        content: "";
+        background: #000;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #FFF500;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

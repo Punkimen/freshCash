@@ -1,0 +1,62 @@
+.any-card {
+    padding: 60px 0;
+
+    @media(max-width: $md4 + px) {
+        padding: 100px 0 100px;
+    }
+
+    @media(max-width: $md5 + px) {
+        padding: 47px 0 80px;
+    }
+
+    &__subtitle-text {
+        margin-bottom: 50px;
+    }
+
+    &__steps {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 912px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media(max-width: $md5 + px) {
+            flex-direction: column;
+        }
+    }
+
+    &__step {
+        text-align: center;
+        width: 30%;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__step-icon {
+        margin-bottom: 8px;
+        flex-grow: 1;
+    }
+
+    &__step-label {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    &__step-text {
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
+
+.section {
+
+    &__title {}
+
+    &__subtitl-text {}
+}

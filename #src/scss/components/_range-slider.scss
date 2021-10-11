@@ -1,0 +1,18 @@
+.irs--flat .irs-bar {
+    background: #319B00;
+    border-radius: 6px;
+    height: 12px;
+}
+
+.irs--flat .irs-handle {
+    background: #000000;
+    box-shadow: 0px 4.41746px 22.0873px rgba(33, 33, 33, 0.2);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    top: 11px;
+
+    i {
+        opacity: 0;
+    }
+}
