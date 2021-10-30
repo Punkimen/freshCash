@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh Cash</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/lemon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
@@ -28,11 +29,11 @@
                     <img src="img/logo.svg" alt="">
                 </a>
             </div>
-            <div class="header__languages">
-                <a href="#" class="header__lang">ua</a>
-                <a href="#" class="header__lang active">ru</a>
-            </div>
             <div class="header__end">
+                <div class="header__languages">
+                    <a href="#" class="header__lang">ua</a>
+                    <a href="#" class="header__lang active">ru</a>
+                </div>
                 <div class="header__btns">
                     <a href="#" class="header__btns-btn btn btn-to-cabinet">
                         <span class="header__cabinet-descr">Особистий кабінет</span>
@@ -40,7 +41,6 @@
                             <use xlink:href="./img/icons/icons.svg#cabinet"></use>
                         </svg>
                     </a>
-
                 </div>
             </div>
         </div>
@@ -74,7 +74,9 @@
             <div class="credit-calc__calculation calculation">
                 <div class="calculation__header">
                     Онлайн-кредит на картку
-                    за 10 хвилин <span class="back-yellow-figure"><span>Гроші на карті в 9:34</span></span>
+                    за 10 хвилин <span class="back-yellow-figure"><span>Гроші на карті в <date id="ten-minuts-time">9:34
+                            </date>
+                        </span></span>
                 </div>
                 <div class="calculation__body">
                     <div class="calculation-item">
@@ -109,7 +111,7 @@
                     </div>
                 </div>
                 <div class="calculation__footer">
-                    <button type="button" class="calculation__footer-btn btn">Отримай гроші зараз</button>
+                    <button type="button" class="calculation__footer-btn btn">ОТРИМАТИ ГРОШІ</button>
                 </div>
             </div>
         </div>
@@ -155,9 +157,8 @@
                         швидко і надійно!</div>
                 </div>
                 <div class="why__item why__item--second">
-                    <div class="why__item-title">Гроші <span class="yellow-back"><span>за 10 хвилин</span></span> на
-                        картку
-                        будь-якого банку</div>
+                    <div class="why__item-title">Гроші <span class="yellow-back"><span>за 10 хвилин</span></span><br> на
+                        картку будь-якого банку</div>
                     <div class="why__item-text">Більше не потрібно їхати до відділення банку - оформлюй кредит онлайн.
                         Гроші зарахуємо на картку будь-якого українського банку.</div>
                 </div>
@@ -402,9 +403,9 @@
             <div class="repay__item">
                 <div class="repay__item-wrapper">
                     <div class="repay__item-content">
-                        <div class="repay__item-title">В особистому кабінеті</div>
-                        <div class="repay__item-text">Ви можете погасити Ваш кредит онлайн не виходячи з дому. Просто
-                            перейдіть в особистий кабінет і оплатіть займ банківською картою</div>
+                        <div class="repay__item-title">Карткою</div>
+                        <div class="repay__item-text">Ти можеш погасити кредит онлайн не виходячи з дому.
+                            Просто перейди в Особистий кабінет і оплати його банківською карткою.</div>
                         <div class="repay__item-icon">
                             <a href="#">
                                 <img src="img/visa.png" alt="">
@@ -426,19 +427,13 @@
                 <a class="repay__link" href="#">
                     <div class="repay__item-wrapper">
                         <div class="repay__item-content">
-                            <div class="repay__item-title">Через платіжні термінали</div>
-                            <div class="repay__item-text">Оплата кредиту в терміналі ibox, EasyPay і City24 - це швидко
-                                і зручною. Термінал Ви зможете
-                                знайти термінал в блізжайшіх супермаркеті </div>
+                            <div class="repay__item-title">Готівкою</div>
+                            <div class="repay__item-text">Оплата кредиту в терміналі Приватбанку -
+                                це швидко і зручно.
+                                Ти зможеш знайти термінал в найближчих супермаркетах.</div>
                             <div class="repay__item-icon">
                                 <a href="#">
-                                    <img src="img/city.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/ibox.png" alt="">
-                                </a>
-                                <a href="#">
-                                    <img src="img/easypay.png" alt="">
+                                    <img src="img/icon/privat-bank.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -458,23 +453,26 @@
             <div class="footer__left">
                 <ul class="footer__list">
                     <li class="footer__list-elem">
-                        <a href="#" class="footer__link">
-                            Новости
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=530" target="blank"
+                            class="footer__link">
+                            Реквізити
                         </a>
                     </li>
                     <li class="footer__list-elem">
-                        <a href="#" class="footer__link">
-                            Реквизиты
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=1030" target="blank"
+                            class="footer__link">
+                            Фонд гарантування вкладів фізичних осіб
                         </a>
                     </li>
                     <li class="footer__list-elem">
-                        <a href="#" class="footer__link">
-                            Фонд гарантирования вкладов физических лиц
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=733" target="blank"
+                            class="footer__link">
+                            Зворотній зв’язок
                         </a>
                     </li>
                     <li class="footer__list-elem">
-                        <a href="#" class="footer__link">
-                            Обратная связь
+                        <a href="#" target="blank" class="footer__link">
+                            Відділення та банкомати
                         </a>
                     </li>
                 </ul>
@@ -482,13 +480,13 @@
             <div class="footer-contacts">
                 <div class="footer-contacts__title">Контакт центр:</div>
                 <div class="footer-contacts__phone">
-                    <a href="tel:380445851487">
-                        +38 (044) 585- 14-87
+                    <a href="tel:0445851487">
+                        (044) 585-14-87
                     </a>
                     <span class="footer-contacts__descrption">(по тарифам оператора)</span>
                 </div>
                 <div class="footer-contacts__phone">
-                    <a href="tel:0800500686">
+                    <a href="tel:0 800 500 686">
                         0 800 500 686
                     </a>
                     <span class="footer-contacts__descrption">(по тарифам оператора)</span>
@@ -500,17 +498,17 @@
             <div class="footer__right">
                 <div class="footer-socail">
                     <div class="footer-socail__links">
-                        <div class="footer-socail__label">Мы в социальных сетях:</div>
+                        <div class="footer-socail__label">Ми у соцмережах:</div>
                         <div class="footer-social__icons">
-                            <a href="#">
+                            <a href=" https://www.facebook.com/UnexBank" target="blank">
                                 <img src="img/icon/facebook.svg" alt="">
                             </a>
-                            <a href="#">
+                            <a href="https://www.youtube.com/user/UnexBankPJSC" target="blank">
                                 <img src="img/icon/youtube.svg" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="footer-socail__news footer-news">
+                    <!-- <div class="footer-socail__news footer-news">
                         <form action="#" id="footer-email-form">
                             <div class="footer-news__label">Підписуйтеся на наші новини!</div>
                             <div class="footer-news__search">
@@ -520,7 +518,7 @@
                                 </button>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -540,10 +538,10 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- <script src="js/vendor.js" defer></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+<script src="js/vendor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
     integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
     integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
     crossorigin="anonymous"></script> -->
@@ -556,7 +554,18 @@
     integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/components/auth.js"></script>
+<script type="module">
+    appData.creditMin = 3000;
+    appData.creditMax = 30000;
+    appData.creditStep = 500;
+    appData.per_count = 12; // Колличество периодов
+    appData.per = 0.2999; // Годовая процентная ставка
+    appData.monthly_per = 0.0499 // месячная процентная ставка
+</script>
 <script src="js/script.js" type="module"></script>
+
+
 <!-- <script src="js/bugs.js" defer></script> -->
 </body>
 

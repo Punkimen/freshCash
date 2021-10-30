@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+    <link rel="stylesheet" href="css/pep.css">
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item active">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div class="anketa__inner">
+                            <div class="anketa__inner-header">
+                                <div class="anketa-title">
+                                    Анкета. Крок <span class="step-quantity">2</span> з 4
+                                </div>
+                                <div class="anketa-label">Основні дані</div>
+                                <div class="anketa__progress-line">
+                                    <span class="green-line"></span>
+                                    <span class="black-line"></span>
+                                </div>
+                                <div class="anketa__progress-info">
+                                    +6% за заповнення поля “Ім’я”
+                                </div>
+                            </div>
+                            <div class="anketa__inner-form anketa-form">
+                                <form action="" id="anketa_2">
+                                    <div class="anketa-form__wrapper">
+                                        <div class="anketa-form__left">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Сім’я
+                                                    </div>
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label" for="status">Сімейний стан</label>
+                                                    <select required name="status">
+                                                        <option value="" hidden disabled selected>Одружений
+                                                        </option>
+                                                        <option>Холост</option>
+                                                        <option>В браке</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Кількість дітей до 18 років</label>
+                                                    <input required type="text" name="child-quantity"
+                                                        placeholder="Кількість дітей">
+                                                </div>
+                                            </div>
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Освіта
+                                                    </div>
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label" for="status">Рівень освіти</label>
+                                                    <select required name="education">
+                                                        <option value="" hidden disabled selected>Вища, неповна вища
+                                                            тощо
+                                                        </option>
+                                                        <option>Среднее</option>
+                                                        <option>Высшее</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Паспортні дані
+                                                    </div>
+                                                </div>
+                                                <div class="passport-data" name="passport">
+                                                    <div class="passport__type">
+                                                        <div class="type-title form__title">Тип паспорта</div>
+                                                        <div class="passport__type-inner">
+                                                            <label class="control control-radio">
+                                                                Книжка
+                                                                <input required class='typePassport' id="radio_passport"
+                                                                    type="radio" name="radio" value="passport"
+                                                                    checked="checked" />
+                                                                <div class="control_indicator"></div>
+                                                            </label>
+                                                            <label class="control control-radio">
+                                                                ID-карта
+                                                                <input required class='typePassport' id="radio_idCard"
+                                                                    value="idCard" type="radio" name="radio" />
+                                                                <div class="control_indicator"></div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="passport__inner">
+                                                        <div class="passport__series reg__input--rowReverse">
+                                                            <div class="reg__input passport__series-ser">
+                                                                <label class="form__title" for="series">Серия*</label>
+                                                                <input required minlength="2" class="passport-ser"
+                                                                    placeholder="XX" type="text" name="series">
+                                                            </div>
+                                                            <div class="reg__input passport__series-num">
+                                                                <label class="form__title"
+                                                                    for="passportNum">Номер*</label>
+                                                                <input required minlength="7" class="passport-num"
+                                                                    placeholder="XXXXXXX" type="text"
+                                                                    name="passportNum">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="idCard__inner">
+                                                        <div class="reg__input idCard__issued">
+                                                            <label class="form__title">Номер документа</label>
+                                                            <input required type="text" name="IDCard"
+                                                                placeholder="XXXXXXXXX">
+                                                        </div>
+                                                        <div class="reg__input idCard__inn">
+                                                            <label class="form__title" for="inn">Номер запису</label>
+                                                            <input required type="text" name="inn"
+                                                                placeholder="XXXXXXXX-XXXXX">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__right">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Адреса реєстрації
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Населений пункт, як в паспорті</label>
+                                                    <input required type="text" name="place-adress"
+                                                        placeholder="Кількість дітей">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Вулиця</label>
+                                                    <input required type="text" name="street-adress"
+                                                        placeholder="Введи назву">
+                                                </div>
+                                                <div class="reg__input-row">
+                                                    <div class="reg__input">
+                                                        <label class="form__label">Будинок</label>
+                                                        <input required type="text" name="street-home"
+                                                            placeholder="XXX">
+                                                    </div>
+                                                    <div class="reg__input">
+                                                        <label class="form__label">Корпус</label>
+                                                        <input required type="text" name="street-korp"
+                                                            placeholder="XXX">
+                                                    </div>
+                                                    <div class="reg__input">
+                                                        <label class="form__label">Квартира</label>
+                                                        <input required type="text" name="street-flat"
+                                                            placeholder="XXX">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Адреса проживання
+                                                    </div>
+                                                </div>
+                                                <div class="control-group control-checkbox--adress mb">
+                                                    <label class="control control-switch">
+                                                        <div class="contol-group-text">Співпадає з адресою реєстрації
+                                                        </div>
+                                                        <div class="onoffswitch">
+                                                            <input required type="checkbox" name="onoffswitch"
+                                                                class="onoffswitch-checkbox" id="adress-switch"
+                                                                tabindex="0">
+                                                            <label class="onoffswitch-label" for="myonoffswitch">
+                                                                <span class="onoffswitch-inner"></span>
+                                                                <span class="onoffswitch-switch"></span>
+                                                            </label>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="adress-inputs">
+                                                    <div class="reg__input">
+                                                        <label class="form__label">Населений пункт, як в
+                                                            паспорті</label>
+                                                        <input required type="text" name="place-adress"
+                                                            placeholder="Кількість дітей">
+                                                    </div>
+                                                    <div class="reg__input">
+                                                        <label class="form__label">Вулиця</label>
+                                                        <input required type="text" name="street-adress"
+                                                            placeholder="Введи назву">
+                                                    </div>
+                                                    <div class="reg__input-row">
+                                                        <div class="reg__input">
+                                                            <label class="form__label">Будинок</label>
+                                                            <input required type="text" name="street-home"
+                                                                placeholder="XXX">
+                                                        </div>
+                                                        <div class="reg__input">
+                                                            <label class="form__label">Корпус</label>
+                                                            <input required type="text" name="street-korp"
+                                                                placeholder="XXX">
+                                                        </div>
+                                                        <div class="reg__input">
+                                                            <label class="form__label">Квартира</label>
+                                                            <input required type="text" name="street-flat"
+                                                                placeholder="XXX">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anketa-form__btns"> <button type="submit" id="submitBtn"
+                                            class="anketa-form__btn btn">Продовжити</button>
+                                        <a id="step__btn-prev" class="anketa-form__back" href="#">Повернутися</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

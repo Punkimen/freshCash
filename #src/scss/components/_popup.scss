@@ -1,313 +1,313 @@
-.popups {
-    background: #a4a4a4;
-    // padding: 100px;
-    /* display: none; */
+// .popups {
+//     background: #a4a4a4;
+//     // padding: 100px;
+//     /* display: none; */
 
-}
+// }
 
-.popup-btn {
-    max-width: 340px;
-    margin: 15px auto;
-}
+// .popup-btn {
+//     max-width: 340px;
+//     margin: 15px auto;
+// }
 
-.popup {
-    background: #fff;
-    border-radius: 10px;
-    position: relative;
-    max-width: 532px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0 auto 20px;
-    padding: 30px;
-}
+// .popup {
+//     background: #fff;
+//     border-radius: 10px;
+//     position: relative;
+//     max-width: 532px;
+//     width: 100%;
+//     text-align: center;
+//     font-family: 'Ubuntu', sans-serif;
+//     margin: 0 auto 20px;
+//     padding: 30px;
+// }
 
-.popup__sent {
-    padding: 50px 60px 54px;
+// .popup__sent {
+//     padding: 50px 60px 54px;
 
-    @media(max-width: $md5 + px) {
-        padding: 30px
-    }
-}
+//     @media(max-width: $md5 + px) {
+//         padding: 30px
+//     }
+// }
 
-.popup__title {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1;
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
+// .popup__title {
+//     font-weight: 500;
+//     font-size: 24px;
+//     line-height: 1;
+//     color: #333;
+//     text-align: center;
+//     margin-bottom: 30px;
 
-    @media(max-width: $md5 + px) {
-        font-size: 18px;
-    }
-}
+//     @media(max-width: $md5 + px) {
+//         font-size: 18px;
+//     }
+// }
 
-.timer {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFAA32;
-}
+// .timer {
+//     margin-top: 20px;
+//     font-weight: bold;
+//     font-size: 30px;
+//     line-height: 20px;
+//     text-align: center;
+//     color: #FFAA32;
+// }
 
-.popup__text {
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-    line-height: 20px;
-    color: #333;
+// .popup__text {
+//     font-size: 16px;
+//     text-align: center;
+//     font-weight: 400;
+//     line-height: 20px;
+//     color: #333;
 
-    &:not(:last-child) {
-        margin-bottom: 15px;
-    }
+//     &:not(:last-child) {
+//         margin-bottom: 15px;
+//     }
 
-    @media(max-width: $md5 + px) {
-        font-size: 12px;
-    }
-}
+//     @media(max-width: $md5 + px) {
+//         font-size: 12px;
+//     }
+// }
 
-.sent__text,
-.congr__text,
-.mistake__text {
-    max-width: 412px;
-    margin: 0 auto;
-}
+// .sent__text,
+// .congr__text,
+// .mistake__text {
+//     max-width: 412px;
+//     margin: 0 auto;
+// }
 
-.popup__exit {
-    width: 40px;
-    height: 40px;
-    display: block;
-    background-color: #F4F4F9;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 12px;
-    border-radius: 0 5px 0 5px;
-    border: none;
-}
+// .popup__exit {
+//     width: 40px;
+//     height: 40px;
+//     display: block;
+//     background-color: #F4F4F9;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     padding: 12px;
+//     border-radius: 0 5px 0 5px;
+//     border: none;
+// }
 
-.popup__exit img {
-    display: block;
-}
+// .popup__exit img {
+//     display: block;
+// }
 
-.popup__mistake {
-    max-width: 532px;
-    width: 100%;
-    text-align: center;
-    padding: 50px 60px 54px;
+// .popup__mistake {
+//     max-width: 532px;
+//     width: 100%;
+//     text-align: center;
+//     padding: 50px 60px 54px;
 
-    @media(max-width: $md5 + px) {
-        padding: 30px
-    }
-}
+//     @media(max-width: $md5 + px) {
+//         padding: 30px
+//     }
+// }
 
-.popup__congr {
-    padding: 50px 60px 40px;
+// .popup__congr {
+//     padding: 50px 60px 40px;
 
-    @media(max-width: $md5 + px) {
-        padding: 30px
-    }
-}
+//     @media(max-width: $md5 + px) {
+//         padding: 30px
+//     }
+// }
 
-.popup__sorry {
-    padding: 30px;
-}
-
-
-
-.sorry-btn {
-    margin-top: 15px;
-}
-
-.case__title {
-    margin-bottom: 20px;
-}
-
-.popup__login {
-    padding: 50px;
-
-    @media(max-width: $md5 + px) {
-        padding: 30px
-    }
-}
-
-.login__inner {
-    max-width: 412px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.login__form-item {
-    margin-bottom: 15px;
-}
-
-.login__form-item label {
-    text-align: left;
-    display: block;
-    font-size: 12px;
-    line-height: 13px;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 10px;
-}
+// .popup__sorry {
+//     padding: 30px;
+// }
 
 
 
-.login__forgot {
-    display: inline-block;
-    color: #A4A4A4;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    border-bottom: 1px dotted #A4A4A4;
-}
+// .sorry-btn {
+//     margin-top: 15px;
+// }
 
-.login__sms-code {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    text-align: left;
-    text-decoration: underline;
-    text-decoration-style: dashed;
-    font-size: 14px;
-    line-height: 20px;
-    color: #CA0000;
+// .case__title {
+//     margin-bottom: 20px;
+// }
 
-    &:hover {
-        .login__sms-info {
-            display: block;
-        }
-    }
-}
+// .popup__login {
+//     padding: 50px;
 
-.login__sms-info {
-    padding: 21px 28px 21px;
-    max-width: 361px;
-    width: 100%;
-    position: absolute;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    font-size: 12px;
-    line-height: 20px;
-    color: #333;
-    bottom: 25px;
-    right: -15px;
-    display: none;
+//     @media(max-width: $md5 + px) {
+//         padding: 30px
+//     }
+// }
 
-    &::before {
-        content: "";
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 17px 18px 17px;
-        border-color: transparent transparent #ffffff transparent;
-        position: absolute;
-        right: 20px;
-        bottom: -10px;
-        transform: rotate(180deg);
-    }
-}
+// .login__inner {
+//     max-width: 412px;
+//     margin: 0 auto;
+//     text-align: left;
+// }
 
-.popup__login-or {
-    text-align: center;
-    padding: 15px 0 13px;
-}
+// .login__form-item {
+//     margin-bottom: 15px;
+// }
 
-.popup__login-outher {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-}
+// .login__form-item label {
+//     text-align: left;
+//     display: block;
+//     font-size: 12px;
+//     line-height: 13px;
+//     font-weight: 400;
+//     color: #333;
+//     margin-bottom: 10px;
+// }
 
 
 
-.popup__login-outher-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+// .login__forgot {
+//     display: inline-block;
+//     color: #A4A4A4;
+//     font-size: 14px;
+//     line-height: 20px;
+//     font-weight: 400;
+//     border-bottom: 1px dotted #A4A4A4;
+// }
 
-    img {
-        display: block;
-    }
+// .login__sms-code {
+//     position: relative;
+//     display: flex;
+//     justify-content: flex-end;
+//     text-align: left;
+//     text-decoration: underline;
+//     text-decoration-style: dashed;
+//     font-size: 14px;
+//     line-height: 20px;
+//     color: #CA0000;
 
-    span {
-        font-size: 10px;
-        line-height: 14px;
-        color: #A4A4A4;
-    }
-}
+//     &:hover {
+//         .login__sms-info {
+//             display: block;
+//         }
+//     }
+// }
 
-.login-btn {
-    display: block;
-    text-align: center;
-    max-width: 100%;
-    margin-bottom: 10px;
-}
+// .login__sms-info {
+//     padding: 21px 28px 21px;
+//     max-width: 361px;
+//     width: 100%;
+//     position: absolute;
+//     background: #FFFFFF;
+//     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+//     font-size: 12px;
+//     line-height: 20px;
+//     color: #333;
+//     bottom: 25px;
+//     right: -15px;
+//     display: none;
 
-.login__register {
-    text-align: center;
-}
+//     &::before {
+//         content: "";
+//         width: 0;
+//         height: 0;
+//         border-style: solid;
+//         border-width: 0 17px 18px 17px;
+//         border-color: transparent transparent #ffffff transparent;
+//         position: absolute;
+//         right: 20px;
+//         bottom: -10px;
+//         transform: rotate(180deg);
+//     }
+// }
 
-.login__regist {
-    font-size: 14px;
-    line-height: 20px;
-    color: #A4A4A4;
-    border-bottom: 1px dotted #A4A4A4;
+// .popup__login-or {
+//     text-align: center;
+//     padding: 15px 0 13px;
+// }
 
-}
+// .popup__login-outher {
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: space-around;
+// }
 
 
 
-.popup__promo {
-    padding: 50px 60px;
+// .popup__login-outher-item {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
 
-    @media(max-width: $md5 + px) {
-        padding: 30px
-    }
-}
+//     img {
+//         display: block;
+//     }
 
-.popup__promo button {
-    max-width: 100%;
-    width: 100%;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
+//     span {
+//         font-size: 10px;
+//         line-height: 14px;
+//         color: #A4A4A4;
+//     }
+// }
 
-.popup__error-text {
-    text-align: center;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #721C24;
-    background: #F8D7DA;
-    border-radius: 3px;
-    margin-bottom: 10px;
-    padding: 10px 0;
-}
+// .login-btn {
+//     display: block;
+//     text-align: center;
+//     max-width: 100%;
+//     margin-bottom: 10px;
+// }
 
-.popup-descr {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 5px;
-}
+// .login__register {
+//     text-align: center;
+// }
 
-.mounth-change {
-    display: none;
-    align-items: center;
-    justify-content: space-between;
+// .login__regist {
+//     font-size: 14px;
+//     line-height: 20px;
+//     color: #A4A4A4;
+//     border-bottom: 1px dotted #A4A4A4;
 
-    &.show {
-        display: flex;
-    }
-}
+// }
 
-.mounth-change__input {
-    max-width: 91px;
-}
+
+
+// .popup__promo {
+//     padding: 50px 60px;
+
+//     @media(max-width: $md5 + px) {
+//         padding: 30px
+//     }
+// }
+
+// .popup__promo button {
+//     max-width: 100%;
+//     width: 100%;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 20px;
+//     color: #fff;
+//     border: none;
+//     cursor: pointer;
+// }
+
+// .popup__error-text {
+//     text-align: center;
+//     font-weight: 300;
+//     font-size: 16px;
+//     line-height: 24px;
+//     text-align: center;
+//     color: #721C24;
+//     background: #F8D7DA;
+//     border-radius: 3px;
+//     margin-bottom: 10px;
+//     padding: 10px 0;
+// }
+
+// .popup-descr {
+//     font-size: 14px;
+//     line-height: 20px;
+//     margin-bottom: 5px;
+// }
+
+// .mounth-change {
+//     display: none;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     &.show {
+//         display: flex;
+//     }
+// }
+
+// .mounth-change__input {
+//     max-width: 91px;
+// }

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    <link rel="shortcut icon" href="img/lemon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="css/vendor.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item active">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div class="anketa__inner">
+                            <div class="anketa__inner-header">
+                                <div class="anketa-title">
+                                    Анкета. Крок <span class="step-quantity">3</span> з 4
+                                </div>
+                                <div class="anketa-label">Основні дані</div>
+                                <div class="anketa__progress-line">
+                                    <span class="green-line"></span>
+                                    <span class="black-line"></span>
+                                </div>
+                                <div class="anketa__progress-info">
+                                    +25% за заповнення даних про роботодавця
+                                </div>
+                            </div>
+                            <div class="anketa__inner-form anketa-form">
+                                <form action="" id="anketa_3">
+                                    <div class="anketa-form__wrapper">
+                                        <div class="anketa-form__left">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Про роботу
+                                                    </div>
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label" for="status">Тип зайнятості</label>
+                                                    <select required name="status-work">
+                                                        <option value="" hidden disabled selected>Обери один з варіантів
+                                                        </option>
+                                                        <option>Безробітний</option>
+                                                        <option>Працювати</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Де ти працюєш?
+                                                    </div>
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label">Назва компанії</label>
+                                                    <input required type="text" name="company-name"
+                                                        placeholder="Кількість дітей">
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label" for="status">Сфера діяльності</label>
+                                                    <select required name="field-of-activity">
+                                                        <option value="" hidden disabled selected>Обери один з варіантів
+                                                        </option>
+                                                        <option>Безробітний</option>
+                                                        <option>Працювати</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label">Телефон компанії</label>
+                                                    <input required type="text" class="input-phone" name="company-phone"
+                                                        placeholder="+38 (0ХХ) ХХХ-ХХ-ХХ">
+                                                </div>
+                                            </div>
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Коли ти почав працювати у цій
+                                                        компанії?
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input-row">
+                                                    <div class="select reg__input">
+                                                        <label class="form__label" for="status">Місяць</label>
+                                                        <select required name="start-work-month">
+                                                            <option>Січень
+                                                            </option>
+                                                            <option>Січень</option>
+                                                            <option>Січень</option>
+                                                        </select>
+                                                        <div class="select_arrow">
+                                                        </div>
+                                                    </div>
+                                                    <div class="select reg__input">
+                                                        <label class="form__label" for="status">Рік</label>
+                                                        <select required name="start-work-year">
+                                                            <option>2017</option>
+                                                            <option>2017</option>
+                                                            <option>2017</option>
+                                                        </select>
+                                                        <div class="select_arrow">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__right">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Рівень посади</div>
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label" for="status">Рік</label>
+                                                    <select required name="work-pos">
+                                                        <option value="" hidden disabled selected>Обери один з
+                                                            варіантів
+                                                        </option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Доходи
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Населений пункт, як в паспорті</label>
+                                                    <input required type="text" name="place-adress"
+                                                        placeholder="Кількість дітей">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Населений пункт, як в паспорті</label>
+                                                    <input required type="text" name="place-adress"
+                                                        placeholder="Кількість дітей">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Дата народження</label>
+                                                    <input required type="date" class="input-date" name="date"
+                                                        placeholder="Твоя дата народження" value="2018-07-22"
+                                                        min="1920-01-01" max="2004-12-31">
+                                                </div>
+                                            </div>
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Майно у власності
+                                                    </div>
+                                                </div>
+                                                <div class="checkboxes-col"><label
+                                                        class="control control-group__item control-checkbox">
+                                                        <div class="contol-group__text">Автомобіль
+                                                        </div>
+                                                        <input type="checkbox" required name="checkbox" />
+                                                        <div class="control_indicator"></div>
+                                                    </label><label class="control control-group__item control-checkbox">
+                                                        <div class="contol-group__text">Будинок / квартира
+                                                        </div>
+                                                        <input type="checkbox" required name="checkbox" />
+                                                        <div class="control_indicator"></div>
+                                                    </label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anketa-form__btns"> <button type="submit" id="submitBtn"
+                                            class="anketa-form__btn btn">Продовжити</button>
+                                        <a id="step__btn-prev" class="anketa-form__back" href="#">Повернутися</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <ul class="footer__list">
+                    <li class="footer__list-elem">
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=530" target="blank"
+                            class="footer__link">
+                            Реквізити
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=1030" target="blank"
+                            class="footer__link">
+                            Фонд гарантування вкладів фізичних осіб
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=733" target="blank"
+                            class="footer__link">
+                            Зворотній зв’язок
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="#" target="blank" class="footer__link">
+                            Відділення та банкомати
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-contacts__title">Контакт центр:</div>
+                <div class="footer-contacts__phone">
+                    <a href="tel:0445851487">
+                        (044) 585-14-87
+                    </a>
+                    <span class="footer-contacts__descrption">(по тарифам оператора)</span>
+                </div>
+                <div class="footer-contacts__phone">
+                    <a href="tel:0 800 500 686">
+                        0 800 500 686
+                    </a>
+                    <span class="footer-contacts__descrption">(по тарифам оператора)</span>
+                </div>
+                <button type="button" class="footer-copy__chat btn-reset">
+                    <span>ОНЛАЙН ЧАТ</span>
+                </button>
+            </div>
+            <div class="footer__right">
+                <div class="footer-socail">
+                    <div class="footer-socail__links">
+                        <div class="footer-socail__label">Ми у соцмережах:</div>
+                        <div class="footer-social__icons">
+                            <a href=" https://www.facebook.com/UnexBank" target="blank">
+                                <img src="img/icon/facebook.svg" alt="">
+                            </a>
+                            <a href="https://www.youtube.com/user/UnexBankPJSC" target="blank">
+                                <img src="img/icon/youtube.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="footer-socail__news footer-news">
+                        <form action="#" id="footer-email-form">
+                            <div class="footer-news__label">Підписуйтеся на наші новини!</div>
+                            <div class="footer-news__search">
+                                <input class="footer__input-search" name="email" type="email" type="search">
+                                <button class="btn footer-news__search-btn">
+                                    Підписатись
+                                </button>
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer-docs">
+                <div class="footer-docs__list">
+                    <a href="#" class="footer-copy__item">© АТ“ЮНЕКС БАНК”. Участник ФГВФО</a>
+                    <a href="#" class="footer-copy__item">Лицензия НБУ 56 от 28.10.2011</a>
+                    <div class="footer-copy__item">© 2004- 2021, АТ“ЮНЕКС БАНК”</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/vendor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+    integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+    crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+    integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/components/auth.js"></script>
+<script type="module">
+    appData.creditMin = 3000;
+    appData.creditMax = 30000;
+    appData.creditStep = 500;
+    appData.per_count = 12; // Колличество периодов
+    appData.per = 0.2999; // Годовая процентная ставка
+    appData.monthly_per = 0.0499 // месячная процентная ставка
+</script>
+<script src="js/script.js" type="module"></script>
+
+
+<!-- <script src="js/bugs.js" defer></script> -->
+</body>
+
+</html>

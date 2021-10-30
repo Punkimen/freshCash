@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item ">Анкета</a>
+                            <a href="#" class="anketa-progress__item active">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div class="loan-decision anketa__inner">
+                            <div class="loan-decision__img">
+                                <img src="img/icon/happy-boy.svg" alt="">
+                            </div>
+                            <div class="loan-decision__title">Твій кредит схвалено!</div>
+                            <div class="loan-decision__table table-row">
+                                <div class="table-row__item">
+                                    <div class="table-row__label">Сума кредиту</div>
+                                    <div class="table-row__value">20 000 грн</div>
+                                </div>
+                                <div class="table-row__item">
+                                    <div class="table-row__label">Щомісячний платіж</div>
+                                    <div class="table-row__value">9453 грн</div>
+                                </div>
+                                <div class="table-row__item">
+                                    <div class="table-row__label">Дата платежу</div>
+                                    <div id="loan-day" class="table-row__value">10</div>
+                                </div>
+                                <div class="loan-decision__table-descr">
+                                    Для зручності ти можеш <button data-popup="#chooseDate-popup"
+                                        class="underline-link btn-reset">обрати
+                                        дату</button> платежу
+                                    самостійно
+                                </div>
+                            </div>
+                            <div class="loan-decision__btns">
+                                <a href="#" class="btn loan-decision__btn">Перейти до оформлення</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

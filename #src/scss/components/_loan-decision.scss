@@ -1,0 +1,77 @@
+.loan-decision {
+    margin-bottom: 24px;
+
+    &__img {
+        margin-bottom: 24px;
+
+        img {
+            max-width: 129px;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 24px;
+    }
+
+    &__table {
+        margin-bottom: 50px;
+    }
+
+    &__table-descr {
+        position: relative;
+        bottom: 20px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+
+        a {
+            font-weight: 600;
+            color: #23527c;
+        }
+    }
+
+    &__btns {
+        text-align: center;
+    }
+
+    &__btn {
+        width: auto;
+        display: inline-block;
+    }
+}
+
+.anketa {
+
+    &__inner {}
+}
+
+.table-row {
+
+    &__item {
+        padding: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid rgba(65, 65, 67, 0.2);
+    }
+
+    &__label {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    &__value {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.underline {}

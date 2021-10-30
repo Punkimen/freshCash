@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item active">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div class="anketa__inner">
+                            <div class="anketa__inner-header">
+                                <div class="anketa-title">
+                                    Анкета. Крок <span class="step-quantity">1</span> з 4
+                                </div>
+                                <div class="anketa-label">Основні дані</div>
+                                <div class="anketa__progress-line">
+                                    <span class="green-line"></span>
+                                    <span class="black-line"></span>
+                                </div>
+                                <div class="anketa__progress-info">
+                                    +6% за заповнення поля “Ім’я”
+                                </div>
+                            </div>
+                            <div class="anketa__inner-form anketa-form">
+                                <form action="" id="anketa_1">
+                                    <div class="anketa-form__wrapper anketa-form__wrapper--strech">
+                                        <div class="anketa-form__block anketa-form__block--h100">
+                                            <div class="anketa-form__block-header">
+                                                <div class="anketa-form__block-title">Прізвище, ім’я та по батькові
+                                                </div>
+                                            </div>
+                                            <div class="reg__input">
+                                                <label class="form__label">Прізвище</label>
+                                                <input required type="name" name="surname" placeholder="Введите имя">
+                                            </div>
+                                            <div class="reg__input">
+                                                <label class="form__label">Ім’я</label>
+                                                <input required type="name" name="name" placeholder="Введите имя">
+                                            </div>
+                                            <div class="reg__input">
+                                                <label class="form__label">По батькові</label>
+                                                <input required type="name" name="last-name" placeholder="По батькові">
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__block">
+                                            <div class="anketa-form__block-header">
+                                                <div class="anketa-form__block-title">Мобільний телефон</div>
+                                            </div>
+                                            <div class="reg__input">
+                                                <label class="form__label">Мобільний номер</label>
+                                                <input required type="tel" class="input-phone" name="phone"
+                                                    placeholder="+38 (0ХХ) ХХХ-ХХ-ХХ">
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__block">
+                                            <div class="anketa-form__block-header">
+                                                <div class="anketa-form__block-title">Дата народження</div>
+                                            </div>
+                                            <div class="reg__input">
+                                                <label class="form__label">Дата народження</label>
+                                                <div class="costumn-calendar">
+                                                    <div class="costumn-calendar__header">
+                                                        <input type="text" placeholder="Твоя дата народження"
+                                                            class="input-costumn-date">
+                                                        <div class="costumn-calendar__icon">
+                                                            <img src="img/icon/calendar-icon.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="costumn-calendar__body">
+                                                        <form class="form-date-val">
+                                                            <div class="costumn-calendar__row-date">
+                                                                <div class="select reg__input costumn-calendar__month">
+                                                                    <select class="costumn-calendar__month-select"
+                                                                        required name="">
+                                                                    </select>
+                                                                    <div class="select_arrow">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="select reg__input costumn-calendar__year">
+                                                                    <select class="costumn-calendar__year-select"
+                                                                        required name="">
+                                                                    </select>
+                                                                    <div class="select_arrow">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="calendar__body-days">
+                                                            </div>
+                                                            <button type="button" style="margin-top: 20px"
+                                                                class="btn set-date-btn">
+                                                                Обрати дату
+                                                            </button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                                <!-- <input required type="date" class="input-date" name="date"
+                                                    placeholder="Твоя дата народження" value="2018-07-22"
+                                                    min="1920-01-01" max="2004-12-31"> -->
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__block anketa-form__block-w100">
+                                            <div class="anketa-form__block-header">
+                                                <div class="anketa-form__block-title">Згода на обробку персональних
+                                                    даних
+                                                </div>
+                                            </div>
+                                            <div class="reg__input">
+                                                <label class="form__label">Дата народження</label>
+                                                <label class="control control-group__item control-checkbox">
+                                                    <div class="contol-group__text">Дозволяю обробку персональних даних
+                                                        згідно <a href="#" class="blue">Умов
+                                                            Банку</a> та погоджуюсь з умовами оформлення заявки</div>
+                                                    <input type="checkbox" required name="checkbox" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anketa-form__btns"> <button type="submit" id="submitBtn"
+                                            class="anketa-form__btn btn">Продовжити</button>
+                                        <a id="step__btn-prev" class="anketa-form__back" href="#">Повернутися</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

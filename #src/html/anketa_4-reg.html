@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item active">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div class="anketa__inner">
+                            <div class="anketa__inner-header">
+                                <div class="anketa-title">
+                                    Анкета. Крок <span class="step-quantity">4</span> з 4
+                                </div>
+                                <div class="anketa-label">Додаткові контакти</div>
+                                <div class="anketa__progress-line">
+                                    <span class="green-line"></span>
+                                    <span class="black-line"></span>
+                                </div>
+                                <div class="anketa__progress-info">
+                                    +25% за заповнення додаткових контактів
+                                </div>
+                            </div>
+
+                            <div class="anketa__inner-form anketa-form">
+                                <form action="" id="anketa_4">
+                                    <div class="anketa-form__wrapper anketa-form__wrapper--strech">
+                                        <div class="anketa-form__left">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Чи є у тебе діючі кредити
+                                                        в інших установах?
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Загальна заборгованість, грн</label>
+                                                    <input required type="text" name="total-debt"
+                                                        placeholder="Від 0 грн до...">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Загальна заборгованість, грн</label>
+                                                    <input required type="text" name="monthly-pay"
+                                                        placeholder="Від 0 грн до...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__right">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Електронна пошта</div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Email</label>
+                                                    <input required type="email" name="email" placeholder="Введи email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anketa-description">
+                                        <div class="anketa-description__title">Контактні особи</div>
+                                        <div class="anketa-description__text">Це люди, які тебе точно знають, і мають з
+                                            тобою
+                                            зв’язок.
+                                            Краще вказати родичів, проте можна залишити контакти друзів або колег.</div>
+                                    </div>
+                                    <div class="anketa-form__wrapper anketa-form__wrapper--strech">
+                                        <div class="anketa-form__left">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Контактна особа №1
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Прізвище</label>
+                                                    <input required type="text" name="contact-1_surnname"
+                                                        placeholder="Введи прізвище">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Ім’я</label>
+                                                    <input required type="text" name="contact-1_name"
+                                                        placeholder="Введи ім’я">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">По батькові</label>
+                                                    <input required type="text" name="contact-1_fathername"
+                                                        placeholder="Введи по батькові">
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label" for="status">Рівень освіти</label>
+                                                    <select required name="contact-1_type">
+                                                        <option value="" hidden disabled selected>Обери один з варіантів
+                                                        </option>
+                                                        <option>Среднее</option>
+                                                        <option>Высшее</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Телефон контактної особи</label>
+                                                    <input required type="text" class="input-phone"
+                                                        name="contact-1_phone" placeholder="+38 (0ХХ) ХХХ-ХХ-ХХ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__right">
+                                            <div class="anketa-form__block">
+                                                <div class="anketa-form__block-header">
+                                                    <div class="anketa-form__block-title">Контактна особа №1
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Прізвище</label>
+                                                    <input required type="text" name="contact-2_surnname"
+                                                        placeholder="Введи прізвище">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Ім’я</label>
+                                                    <input required type="text" name="contact-2_name"
+                                                        placeholder="Введи ім’я">
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">По батькові</label>
+                                                    <input required type="text" name="contact-2_fathername"
+                                                        placeholder="Введи по батькові">
+                                                </div>
+                                                <div class="select reg__input">
+                                                    <label class="form__label" for="status">Рівень освіти</label>
+                                                    <select required name="contact-2_type">
+                                                        <option value="" hidden disabled selected>Обери один з варіантів
+                                                        </option>
+                                                        <option>Среднее</option>
+                                                        <option>Высшее</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                </div>
+                                                <div class="reg__input">
+                                                    <label class="form__label">Телефон контактної особи</label>
+                                                    <input required type="text" class="input-phone"
+                                                        name="contact-2_phone" placeholder="+38 (0ХХ) ХХХ-ХХ-ХХ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="anketa-form__block anketa-form__block-w100">
+                                            <div class="reg__input">
+                                                <label class="control control-group__item control-checkbox">
+                                                    <div class="contol-group__text">Я належу до політично значущих осіб,
+                                                        членів їх сім'ї, осіб, пов’язаних із <a href="">політично
+                                                            значущими особами</a>
+                                                    </div>
+                                                    <input type="checkbox" required name="checkbox"
+                                                        data-attention="#politics-attention" />
+                                                    <div class="control_indicator"></div>
+                                                </label>
+                                                <div id="politics-attention" class="checkbox-attention">
+                                                    <span class="bold">Увага!</span> Для осіб, що належать до категорії
+                                                    політично значущих осіб, Банком застосовуються додаткові заходи
+                                                    перевірки та погодження встановлення ділових відносин.
+                                                    Будь-ласка, переконайся, чи дійсно ти належиш до цієї категорії.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anketa-form__btns">
+                                        <button type="submit" id="submitBtn" data-popup="#info-popup"
+                                            class="anketa-form__btn btn">Продовжити</button>
+                                        <a id="step__btn-prev" class="anketa-form__back" href="#">Повернутися</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

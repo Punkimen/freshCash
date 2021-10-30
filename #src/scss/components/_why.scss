@@ -1,8 +1,15 @@
 .why {
-    padding: 60px 0 60px;
+    padding: 35px 0 60px;
+
+    @media(max-width: $md4 + px) {
+        padding-top: 25px;
+    }
 
     &__inner {
-        padding: 38px 84px 60px 84px;
+        max-width: 986px;
+        padding: 0 0 0 16px;
+        background: 0 0;
+        margin: 0 auto;
 
         @media(max-width: $md3 + px) {
             display: block;
@@ -16,7 +23,14 @@
     }
 
     &__title {
-        margin-bottom: 48px;
+
+        &.section__title {
+            margin-bottom: 48px;
+
+            @media(max-width: $md4 + px) {
+                margin-bottom: 24px;
+            }
+        }
     }
 
     &__wrapper {
@@ -30,8 +44,8 @@
     }
 
     &__item {
-        padding: 32px;
-        background: #9EF01A;
+        padding: 32px 32px 46px;
+        background: #fff;
         border-radius: 16px;
 
         @media(max-width: $md3 + px) {
@@ -41,7 +55,7 @@
         }
 
         @media(max-width: $md5 + px) {
-            padding: 16px;
+            padding: 16px 16px 24px;
 
             &:not(:last-child) {
                 margin-bottom: 24px;
@@ -54,8 +68,8 @@
     &__item-title {
         font-weight: bold;
         font-size: 28px;
-        line-height: 32px;
-        margin-bottom: 27px;
+        line-height: 39px;
+        margin-bottom: 24px;
 
         @media(max-width: $md5 + px) {
             font-weight: bold;

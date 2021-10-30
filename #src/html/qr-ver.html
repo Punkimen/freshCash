@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item active">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div class="anketa__inner">
+                            <div class="anketa__title">Фотографування</div>
+                            <div class="anketa__inner-notification qr-ver">
+                                <div class="qr-ver__text anketa__text">Припливли, так довго все заповнювали, і тут таке
+                                    ...
+                                    <div class="qr-ver__QR">
+                                        <img src="img/qr.png" alt="">
+                                    </div>
+                                    <div class="qr-ver__text anketa__text">Давай так: відскануй QR код з телефону для
+                                        продовження оформлення.
+                                        Адже твій телефон точно з камерою.</div>
+                                </div>
+                                <div class="anketa-form__btns">
+                                    <a href="#" class="anketa-form__btn btn">Продовжити</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

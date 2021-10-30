@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item active">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div id="" class="anketa__inner anketa__inner--center">
+                            <div class="anketa__inner-notification anketa-notification">
+                                <div class="anketa-notification__loading">
+                                    <img src="img/icon/loading.png" alt="">
+                                    <div id="anketa-timer" class="loading__timer">
+                                        0:22
+                                    </div>
+                                </div>
+                                <div class="anketa-notification__title anketa-title">Заповнюємо анкету замість тебе!
+                                </div>
+                                <div class="anketa-notification__text anketa__text">Трохи терпіння, ми заповнюємо анкету
+                                    за тебе.
+                                    На це потрібно не більше 2 хвилин</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

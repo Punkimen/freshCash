@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+    <link rel="stylesheet" href="css/camera.css">
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item active">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div id="" class="anketa__inner anketa__inner--center">
+                            <div class="anketa__inner-notification anketa-notification">
+                                <div class="anketa-notification__face">
+                                    <img src="img/icon/happy-boy.svg" alt="">
+                                </div>
+                                <div class="anketa-notification__title anketa-title">Вітаємо!</div>
+                                <div class="anketa-notification__text anketa__text">Ти чудовий фотограф та зробив гарні
+                                    знімки. Тепер нам необхідно впевнитися,
+                                    що ти не робот - для цього слідуй підсказкам на наступному екрані.</div>
+                            </div>
+                            <div class="anketa-form__btns">
+                                <button id="start-verification" data-popup="#photoverification" type="button" href="#"
+                                    class="anketa-form__btn btn photo-do__btn">Почати</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+    <script src="js/camera.js"></script>
+</body>
+
+</html>

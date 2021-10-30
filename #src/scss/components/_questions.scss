@@ -1,6 +1,9 @@
 .questions {
     padding: 60px 0;
 
+    @media(max-width: $md4 + px) {
+        padding: 0 0 45px;
+    }
 
     &__title {}
 
@@ -102,7 +105,7 @@
         }
 
         @media(max-width: $md5 + px) {
-            padding: 15px 0;
+            padding: 0px 34px 15px 19px;
             font-size: 14px;
         }
     }
@@ -136,6 +139,10 @@
         padding-right: 15px;
         font-weight: 300;
 
+        @media(max-width: $md5 + px) {
+            padding-right: 20px;
+        }
+
         &::before {
             content: '';
             display: block;
@@ -149,6 +156,7 @@
 
             @media(max-width: $md5 + px) {
                 top: 7px;
+
             }
         }
 

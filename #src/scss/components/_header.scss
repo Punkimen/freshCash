@@ -44,9 +44,10 @@
         display: flex;
         align-items: center;
         text-transform: uppercase;
-        margin: 0 47px 0 0px;
-        font-size: 14px;
-        line-height: 16px;
+        margin: 0 37px 0 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
         flex: 1;
 
         @media(max-width: $md3 + px) {
@@ -66,6 +67,7 @@
     }
 
     &__lang {
+
         color: #fff;
         transition: all .2s;
         -webkit-transition: all .2s;
@@ -90,7 +92,10 @@
         }
     }
 
-    &__end {}
+    &__end {
+        display: flex;
+        align-items: center;
+    }
 
 
     &__btns {
@@ -99,12 +104,14 @@
     }
 
     &__btns-btn {
-        padding: 12px 25px 12px 30px;
+        padding: 12px 30px 12px 30px;
         background-color: $colorDark;
 
         &:hover {
-            background-color: $colorDark;
-            color: #fff;
+            @media(min-width: $md4 + px) {
+                background-color: $colorDark;
+                color: #fff;
+            }
         }
 
         @media(max-width: $md3 + px) {

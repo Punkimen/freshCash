@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item active">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div id="anketa-notification" class="anketa__inner anketa__inner--center">
+                            <!-- <div class="anketa__inner-notification anketa-notification">
+                                <div class="anketa-notification__face">
+                                    <img src="img/icon/happy-boy.svg" alt="">
+                                </div>
+                                <div class="anketa-notification__title anketa-title">Попередня заявка вже
+                                    схвалена!</div>
+                                <div class="anketa-notification__text anketa__text">Твоя заявка від 27.09.2021 на 20000
+                                    грн вже
+                                    схвалена.
+                                    Тож можеш переходити до оформлення кредиту.</div>
+                            </div>
+                            <div class="anketa-form__btns">
+                                <a href="#" class="anketa-form__btn btn">Оформити кредит</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

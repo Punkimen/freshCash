@@ -1,5 +1,3 @@
-import { appData } from './auth.js';
-
 export const calculation = () => {
     let $input = $("#calculation-summ");
 

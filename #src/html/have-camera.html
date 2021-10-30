@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    @@include('components/_styles.html')
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <section class="anketa">
+                <div class="anketa__header">
+                    <div class="container">
+                        <div class="anketa__header-logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="anketa-body">
+                    <div class="container">
+                        <div class="anketa-progress">
+                            <a href="#" class="anketa-progress__item">Анкета</a>
+                            <a href="#" class="anketa-progress__item">Рішення по кредиту</a>
+                            <a href="#" class="anketa-progress__item active">Фотографування</a>
+                            <a href="#" class="anketa-progress__item">Підписання договору</a>
+                            <a href="#" class="anketa-progress__item">Виплата на карту</a>
+                        </div>
+                        <div class="anketa__inner anketa__inner--center">
+                            <div class="anketa__inner-notification have-camera">
+                                <div class="have-camera__text anketa__text">Перевір, чи є у цьому пристрої
+                                    камера для фотографування</div>
+                                <label class="have-camera__checkbox control control-group__item control-checkbox">
+                                    <div class="contol-group__text">Ні, на цьому пристрої немає камери</div>
+                                    <input type="checkbox" required name="checkbox" />
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
+                            <div class="anketa-form__btns">
+                                <a href="#" class="anketa-form__btn btn">Продовжити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('components/_footer.html')
+        @@include('components/_popups.html')
+    </div>
+    @@include('components/_scripts.html')
+</body>
+
+</html>

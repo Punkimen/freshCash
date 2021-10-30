@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Cash</title>
+    <link rel="shortcut icon" href="img/lemon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="css/vendor.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/pep.css">
+</head>
+
+<body>
+    <div class="site-container">
+        <main class="main">
+            <header class="header payment-header">
+                <div class="container">
+                    <div class="payment-header__wrapper">
+                        <div class="payment-header__logo lemon-logo">
+                            <img src="img/lemon-logo.svg" alt="logo">
+                        </div>
+                        <a href="#" class="payment-header__name">
+                            <div class="payment-header__name-circle">
+                                <span>NS</span>
+                            </div>
+                            <div class="payment-header__name-text">
+                                <span>Name</span>
+                                <span>Surname</span>
+                            </div>
+                        </a>
+                        <div class="payment-header__burger">
+                            <button id="burger" class="btn-reset">
+                                <img src="img/icon/burger.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="payment-header__mobile">
+                        <div class="payment-header__mobile-back"></div>
+                        <div class="payment-header__mobile-content"></div>
+                    </div>
+                </div>
+            </header>
+            <section class="payment urgently">
+                <div class="container">
+                    <div class="payment__wrapper">
+                        <div class="payment-aside payment-block">
+                            <div class="payment-aside__nav">
+                                <a href="#" class="payment-aside__item current urgently">
+                                    <div class="payment-aside__label">Кредит готівкою</div>
+                                    <div class="payment-aside__total">28 000 грн</div>
+                                </a>
+                                <a href="#" class="payment-aside__item">
+                                    <div class="payment-aside__label">Платіжні картки</div>
+                                </a>
+                            </div>
+                            <div class="payment-aside__footer">
+                                <a href="#" class="payment-aside__item">
+                                    <div class="payment-aside__label">Вихід</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="payment-content">
+                            <div class="payment-block credit-handle">
+                                <div class="credit-handle__status">Кредит готівкою</div>
+                                <div class="credit-handle__body">
+                                    <div class="credit-handle__summ">8 000 грн</div>
+                                    <div class="credit-handle__info">необхідно сплатити <span>до 12 липня 2021</span>
+                                    </div>
+                                    <div class="credit-handle__progress">
+                                        <div class="credit-handle__progress-line">
+                                            <span class="progress-line__load"></span>
+                                            <span class="progress-line__total"></span>
+                                        </div>
+                                        <div class="credit-handle__progress-info">Залишилося 20 днів</div>
+                                    </div>
+                                    <div class="credit-handle__btns">
+                                        <button type="button" class="credit-handle__btn btn">Оплатити карткою</button>
+                                        <button type="button" class="credit-handle__btn btn">Оплатити готівкою</button>
+                                        <button type="button" class="credit-handle__btn btn">Реквізити для
+                                            переказу</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-block payment-info">
+                                <div class="payment-info__tabs">
+                                    <button class="payment-info__tabs-item btn-reset active">Графік платежів</button>
+                                    <button class="payment-info__tabs-item btn-reset">Оплати по кредиту</button>
+                                    <button class="payment-info__tabs-item btn-reset">Документи та дії</button>
+                                </div>
+                                <div class="payment-info__tabs-mobile">
+                                    <div class="payment-info__tabs-select payment-tabs-select">
+                                        <div class="payment-tabs-select__header">
+                                            <div class="payment-tabs-select__active">Графік платежів</div>
+                                        </div>
+                                        <div class="payment-tabs-select__body">
+                                            <div class="payment-tabs-select__item">Графік платежів</div>
+                                            <div class="payment-tabs-select__item">Оплати по кредиту</div>
+                                            <div class="payment-tabs-select__item">Документи та дії</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-info__body">
+                                    <div class="payment-info__item payment-item payment-graph show">
+                                        <div class="payment-item__wrapper">
+                                            <div class="payment-item__left">
+                                                <div class="payment-item__table payment-graph__table payment-table">
+                                                    <div class="payment-table__header">
+                                                        <div class="payment-table__header-num"></div>
+                                                        <div class="payment-table__header-label">Дата платежу</div>
+                                                        <div class="payment-table__header-label">Сума</div>
+                                                    </div>
+                                                    <div class="payment-table__body">
+                                                        <div class="payment-table__row payed">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">1</div>
+                                                                <div class="payment-table__row-date">12.06.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">2</div>
+                                                                <div class="payment-table__row-date">12.07.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">3</div>
+                                                                <div class="payment-table__row-date">12.08.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">4</div>
+                                                                <div class="payment-table__row-date">12.09.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">5</div>
+                                                                <div class="payment-table__row-date">12.10.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">6</div>
+                                                                <div class="payment-table__row-date">12.11.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">7</div>
+                                                                <div class="payment-table__row-date">12.12.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">8</div>
+                                                                <div class="payment-table__row-date">12.01.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">9</div>
+                                                                <div class="payment-table__row-date">12.02.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">10</div>
+                                                                <div class="payment-table__row-date">12.03.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-num">11</div>
+                                                                <div class="payment-table__row-date">12.04.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="payment-item__right">
+                                                <div class="payment-progress-circle">
+                                                    <div class="diagram progress" data-percent="24">
+                                                        <div class="piece left"></div>
+                                                        <div class="piece right"></div>
+                                                        <div class="text">
+                                                            <div>
+                                                                <span class="payment-progress__percent">24%</span>
+                                                                <span class="payment-progress__info">Кредиту вже
+                                                                    сплачено</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payment-graph__info-items">
+                                                    <div class="payment-graph__pay-item">
+                                                        <span class="payment-graph__pay-val">11</span>
+                                                        <span class="payment-graph__pay-text">Залишилося
+                                                            платежів</span>
+                                                    </div>
+                                                    <div class="payment-graph__pay-item">
+                                                        <span class="payment-graph__pay-val">12</span>
+                                                        <span class="payment-graph__pay-text">Всього
+                                                            платежів</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment-info__item payment-item payment-pay">
+                                        <div class="payment-item__wrapper payment-item__wrapper--normal">
+                                            <div class="payment-item__left">
+                                                <div style="display: none;"
+                                                    class="payment-item__table payment-pay__table payment-table">
+                                                    <div class="payment-table__header">
+                                                        <div class="payment-table__header-label">Дата оплати</div>
+                                                        <div class="payment-table__header-label">Сума</div>
+                                                    </div>
+                                                    <div class="payment-table__body">
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.06.2021</div>
+                                                                <div class="payment-table__row-summ">+ 8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.07.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.08.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.09.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.10.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.11.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.12.2021</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.01.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.02.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.03.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="payment-table__row">
+                                                            <div class="payment-table__row-inner">
+                                                                <div class="payment-table__row-date">12.04.2022</div>
+                                                                <div class="payment-table__row-summ">8 000 грн</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payment-pay__empty">
+                                                    <div class="payment-pay__empty-icon">
+                                                        <img src="img/icon/tech-work.svg" alt="">
+                                                    </div>
+                                                    <div class="payment-pay__empty-text">Наразі інформація про
+                                                        зараховані платежі недоступна з технічних причин - тривають
+                                                        роботи з поліпшення сервісу</div>
+                                                </div>
+                                            </div>
+                                            <div class="payment-item__right">
+                                                <div class="payment-pay__content">
+                                                    <div class="payment-pay__content-title">Корисно знати</div>
+                                                    <div class="payment-pay__content-text">
+                                                        <p>Плановий платіж краще вносити
+                                                            за пару днів до дати, що вказана у графіку. Це гарантує
+                                                            своєчасне зарахування коштів та покращує кредитну історію!
+                                                        </p>
+                                                    </div>
+                                                    <div class="payment-pay__content-text">
+                                                        <p><b>Терміни надходження:</b></p>
+                                                        <p>Картою в особистому кабінеті - <b>моментально</b></p>
+                                                        <p>Готівкою в терміналі Приват 24 - <b>моментально</b></p>
+                                                        <p>У касі банку - <b>моментально</b></p>
+                                                        <p>Переказ за реквізитами -
+                                                            <b>може зайняти кілька днів</b> (терміни залежать від
+                                                            банку
+                                                            платника. Сплачуй завчасно, щоб кошти встигли надійти).
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment-info__item payment-item payment-doc ">
+                                        <div class="payment-doc__wrapper">
+                                            <div class="payment-doc__item">
+                                                <div class="payment-doc__icon">
+                                                    <img src="img/payment/doc_1.svg" alt="">
+                                                </div>
+                                                <div class="payment-doc__text">Документи
+                                                    по кредиту</div>
+                                            </div>
+                                            <div class="payment-doc__item">
+                                                <div class="payment-doc__icon">
+                                                    <img src="img/payment/doc_2.svg" alt="">
+                                                </div>
+                                                <div class="payment-doc__text">Дострокове
+                                                    погашення</div>
+                                            </div>
+                                            <div class="payment-doc__item">
+                                                <div class="payment-doc__icon">
+                                                    <img src="img/payment/doc_3.svg" alt="">
+                                                </div>
+                                                <div class="payment-doc__text">Інформація
+                                                    про кредит</div>
+                                            </div>
+                                            <div class="payment-doc__item">
+                                                <div class="payment-doc__icon">
+                                                    <img src="img/payment/doc_4.svg" alt="">
+                                                </div>
+                                                <div class="payment-doc__text">Відмова
+                                                    від кредиту</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <ul class="footer__list">
+                    <li class="footer__list-elem">
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=530" target="blank"
+                            class="footer__link">
+                            Реквізити
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=1030" target="blank"
+                            class="footer__link">
+                            Фонд гарантування вкладів фізичних осіб
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="https://unexbank.ua/site/page.php?lang=UA&id_part=733" target="blank"
+                            class="footer__link">
+                            Зворотній зв’язок
+                        </a>
+                    </li>
+                    <li class="footer__list-elem">
+                        <a href="#" target="blank" class="footer__link">
+                            Відділення та банкомати
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <div class="footer-contacts__title">Контакт центр:</div>
+                <div class="footer-contacts__phone">
+                    <a href="tel:0445851487">
+                        (044) 585-14-87
+                    </a>
+                    <span class="footer-contacts__descrption">(по тарифам оператора)</span>
+                </div>
+                <div class="footer-contacts__phone">
+                    <a href="tel:0 800 500 686">
+                        0 800 500 686
+                    </a>
+                    <span class="footer-contacts__descrption">(по тарифам оператора)</span>
+                </div>
+                <button type="button" class="footer-copy__chat btn-reset">
+                    <span>ОНЛАЙН ЧАТ</span>
+                </button>
+            </div>
+            <div class="footer__right">
+                <div class="footer-socail">
+                    <div class="footer-socail__links">
+                        <div class="footer-socail__label">Ми у соцмережах:</div>
+                        <div class="footer-social__icons">
+                            <a href=" https://www.facebook.com/UnexBank" target="blank">
+                                <img src="img/icon/facebook.svg" alt="">
+                            </a>
+                            <a href="https://www.youtube.com/user/UnexBankPJSC" target="blank">
+                                <img src="img/icon/youtube.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="footer-socail__news footer-news">
+                        <form action="#" id="footer-email-form">
+                            <div class="footer-news__label">Підписуйтеся на наші новини!</div>
+                            <div class="footer-news__search">
+                                <input class="footer__input-search" name="email" type="email" type="search">
+                                <button class="btn footer-news__search-btn">
+                                    Підписатись
+                                </button>
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer-docs">
+                <div class="footer-docs__list">
+                    <a href="#" class="footer-copy__item">© АТ“ЮНЕКС БАНК”. Участник ФГВФО</a>
+                    <a href="#" class="footer-copy__item">Лицензия НБУ 56 от 28.10.2011</a>
+                    <div class="footer-copy__item">© 2004- 2021, АТ“ЮНЕКС БАНК”</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/vendor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw=="
+    crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+    integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+    crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
+    integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/components/auth.js"></script>
+<script type="module">
+    appData.creditMin = 3000;
+    appData.creditMax = 30000;
+    appData.creditStep = 500;
+    appData.per_count = 12; // Колличество периодов
+    appData.per = 0.2999; // Годовая процентная ставка
+    appData.monthly_per = 0.0499 // месячная процентная ставка
+</script>
+<script src="js/script.js" type="module"></script>
+
+
+<!-- <script src="js/bugs.js" defer></script> -->
+    <script src="js/payment.js"></script>
+</body>
+
+</html>

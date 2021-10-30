@@ -1,0 +1,57 @@
+.costumn-calendar {
+    position: relative;
+
+    &__header {
+        position: relative;
+    }
+
+    &__body {
+        display: none;
+        position: absolute;
+        top: calc(100% + 2px);
+        width: 100%;
+        padding: 16px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+        z-index: 99;
+    }
+
+    &__row-date {
+        display: flex;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .select {
+        select {
+            border-color: #000;
+        }
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &_arrow {
+            position: absolute;
+            top: 14px;
+            right: 12px;
+        }
+    }
+}
+
+
+
+.reg {
+
+    &__input {}
+}
+
+.calendar {
+
+    &__body-days {}
+}

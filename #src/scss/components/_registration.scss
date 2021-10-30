@@ -112,6 +112,8 @@
 
         &--stretch {
             align-items: stretch;
+
+
         }
 
         &--grid {
@@ -193,6 +195,7 @@
     }
 
     &__input {
+        width: 100%;
         position: relative;
         margin-bottom: 15px;
 
@@ -469,8 +472,6 @@
 }
 
 .control-group {
-    margin-bottom: 50px;
-
     &__item {
         &:not(:last-child) {
             margin-bottom: 15px;
@@ -490,6 +491,10 @@
 
 .control-checkbox--adress {
     text-align: center;
+
+    &.mb {
+        margin-bottom: 50px;
+    }
 
     @media(max-width: $md6 + px) {
         text-align: left;
@@ -630,5 +635,11 @@
 
     .reg__form {
         margin-bottom: 60px;
+    }
+}
+
+.checkboxes-col {
+    label {
+        display: block;
     }
 }
