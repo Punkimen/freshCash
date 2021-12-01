@@ -10,17 +10,21 @@ let path = {
         js: project_folder + '/js/',
         img: project_folder + '/img/',
         fonts: project_folder + '/fonts/',
-        pdf: project_folder + '/'
+        video: project_folder + '/video/',
+        php: project_folder + '/',
+        json: project_folder + '/',
     },
     src: {
         html: [source_folder + '/html/**/*.html', '!' + source_folder + '/html/**/_*.html'],
         // css: source_folder + '/scss/style.scss',
-        css: [source_folder + '/scss/**/*.scss', '!' + source_folder + '/scss/_*.scss'],
+        css: [source_folder + '/scss/**/*.scss', '!' + source_folder + '/scss/**/_*.scss'],
         // js: source_folder + '/js/script.js',
-        js: [source_folder + '/js/**/*.js', '!' + source_folder + '/js/**/_*.js'],
+        js: [source_folder + '/js/*.js', '!' + source_folder + '/js/_*.js'],
         img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
         fonts: source_folder + '/fonts/*.ttf',
-        pdf: source_folder + '/*.pdf',
+        video: source_folder + '/video/*.mp4',
+        php: source_folder + '/mail/**/*.php',
+        json: source_folder + '/**/*.json',
     },
     watch: {
         html: source_folder + '/**/*.html',
@@ -28,7 +32,8 @@ let path = {
         js: source_folder + '/js/**/*.js',
         img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
         svg: source_folder + '/iconsprite/*.svg',
-        pdf: source_folder + '/*.pdf',
+        php: source_folder + '/mail/**/*.php',
+        json: source_folder + '/**/*.json',
     },
     clean: './' + project_folder + '/'
 };
@@ -37,7 +42,7 @@ let { src, dest } = require('gulp'),
     browsersync = require('browser-sync').create(),
     fileinclude = require('gulp-file-include'),
     del = require('del'),
-    scss = require('gulp-sass'),
+    scss = require('gulp-sass')(require('sass')),
     autoprefix = require('gulp-autoprefixer'),
     group_media = require('gulp-group-css-media-queries'),
     clean_css = require('gulp-clean-css'),
@@ -60,12 +65,6 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(dest(path.build.html))
-        .pipe(browsersync.stream())
-}
-
-function pdf() {
-    return src(path.src.pdf)
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
@@ -140,6 +139,20 @@ function fonts() {
         .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts))
 }
+function video() {
+    return src(path.src.video)
+        .pipe(dest(path.build.video))
+}
+function php() {
+    return src(path.src.php)
+        .pipe(dest(path.build.php))
+        .pipe(browsersync.stream())
+}
+function json() {
+    return src(path.src.json)
+        .pipe(dest(path.build.json))
+        .pipe(browsersync.stream())
+}
 function fontsStyle(params) {
 
     let file_content = fs.readFileSync(source_folder + '/scss/_fonts.scss');
@@ -168,20 +181,24 @@ function watchFiles() {
     gulp.watch([path.watch.js], js)
     gulp.watch([path.watch.img], images)
     gulp.watch([path.watch.svg], svg)
-    gulp.watch([path.watch.pdf], pdf)
+    gulp.watch([path.watch.php], php)
+    gulp.watch([path.watch.json], json)
+
 }
 
 function clean() {
     return del(path.clean)
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, svg, pdf), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, svg, video, php, json), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
+exports.video = video;
+exports.php = php;
+exports.json = json;
 exports.svg = svg;
-exports.pdf = pdf;
 exports.images = images;
 exports.js = js;
 exports.css = css;

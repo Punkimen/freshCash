@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.css">
 <link rel="stylesheet" href="css/vendor.min.css">
 <link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/styleForBugs.css">
     <link rel="stylesheet" href="css/pep.css">
 </head>
 
@@ -65,13 +66,30 @@
                                                 </div>
                                                 <div class="select reg__input">
                                                     <label class="form__label" for="status">Сімейний стан</label>
-                                                    <select required name="status">
-                                                        <option value="" hidden disabled selected>Одружений
-                                                        </option>
-                                                        <option>Холост</option>
-                                                        <option>В браке</option>
-                                                    </select>
-                                                    <div class="select_arrow">
+                                                    <div class="custom-select">
+                                                        <div class="custom-select__header">
+                                                            <span class="custom-select__val">
+                                                                Выберет из списка
+                                                            </span>
+                                                            <div class="select_arrow">
+                                                            </div>
+                                                        </div>
+                                                        <div class="custom-select__body">
+                                                            <div class="custom-select__item current">
+                                                                <span class="custom-select__choose">
+                                                                    Одружений
+                                                                </span>
+                                                                <input class="custom-select__radio" value="Одружений"
+                                                                    name="family-status" type="radio">
+                                                            </div>
+                                                            <div class="custom-select__item">
+                                                                <span class="custom-select__choose">
+                                                                    Холост
+                                                                </span>
+                                                                <input class="custom-select__radio" value="Холост"
+                                                                    name="family-status" type="radio">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="reg__input">
@@ -333,9 +351,9 @@
         <div class="container">
             <div class="footer-docs">
                 <div class="footer-docs__list">
-                    <a href="#" class="footer-copy__item">© АТ“ЮНЕКС БАНК”. Участник ФГВФО</a>
-                    <a href="#" class="footer-copy__item">Лицензия НБУ 56 от 28.10.2011</a>
-                    <div class="footer-copy__item">© 2004- 2021, АТ“ЮНЕКС БАНК”</div>
+                    <a href="#" class="footer-copy__item">© АТ “ЮНЕКС БАНК”. Учасник ФГВФО</a>
+                    <a href="#" class="footer-copy__item">Ліцензія НБУ від 28.10.2011</a>
+                    <div class="footer-copy__item">© 2004- 2021, АТ “ЮНЕКС БАНК”</div>
                 </div>
             </div>
         </div>
@@ -1005,6 +1023,7 @@
 
 
 <!-- <script src="js/bugs.js" defer></script> -->
+    <script src="js/select.js"></script>
 </body>
 
 </html>

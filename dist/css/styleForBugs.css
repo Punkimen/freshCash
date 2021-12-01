@@ -1,0 +1,142 @@
+.anketa-progress__item {
+  padding: 18px 32px 17px 29px;
+  -webkit-clip-path: polygon(0 0, 94% 0, 99% 48%, 94% 100%, 0 100%, 5% 48%);
+  clip-path: polygon(0 0, 94% 0, 99% 48%, 94% 100%, 0 100%, 5% 48%);
+}
+
+.anketa-progress__item:first-child {
+  -webkit-clip-path: polygon(0 0, 89% 0, 99% 50%, 89% 100%, 0 100%);
+  clip-path: polygon(0 0, 89% 0, 99% 50%, 89% 100%, 0 100%);
+}
+
+.anketa-progress__item:not(:last-child) {
+  margin-right: -6px;
+}
+
+.anketa__progress-line {
+  overflow: visible;
+}
+
+.anketa__progress-line .black-line {
+  border-radius: 3px;
+}
+
+.anketa__progress-line .green-line {
+  border-radius: 3px;
+  left: -1px;
+}
+
+.footer {
+  background: #000;
+  padding: 32px 0 16px;
+}
+
+.footer__wrapper {
+  grid-template-columns: 31% 31% 33%;
+  padding-bottom: 14px;
+}
+
+.footer-docs__list {
+  grid-template-columns: 31% 31% 33%;
+  grid-gap: 15px;
+}
+
+.footer__bottom {
+  border: none;
+}
+
+.footer-contacts__descrption {
+  line-height: 14px;
+}
+
+.select_arrow {
+  pointer-events: none;
+}
+
+.custom-select {
+  position: relative;
+}
+
+.custom-select__header {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 9px 15px;
+  display: block;
+  width: 100%;
+  border: 1px solid #eaecf0;
+  border-radius: 5px;
+  transition: all 0.2s;
+  padding-right: 40px;
+  color: #000;
+}
+
+.custom-select__header:hover {
+  border-color: #9ef01a;
+}
+
+.custom-select__val {
+  color: rgba(65, 65, 67, 0.5);
+}
+
+.custom-select.filed .custom-select__val {
+  color: #000;
+}
+
+.custom-select__body {
+  display: none;
+  max-height: 336px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  background: #fff;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  z-index: 4;
+  overflow: auto;
+}
+
+.custom-select__body .mCSB_container {
+  padding-right: 0;
+}
+
+.custom-select__item {
+  position: relative;
+  padding: 6px 10px 7px 10px;
+  transition: all ease 0.2s;
+}
+
+.custom-select__item:hover {
+  background: rgba(65, 65, 67, 0.05);
+}
+
+.custom-select__item.current {
+  background: #9ef01a;
+}
+
+.custom-select__item input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0;
+}
+
+.custom-select .select_arrow {
+  top: 14px;
+}
+
+@media (max-width: 568px) {
+  .footer-docs__list {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}

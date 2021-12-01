@@ -54,13 +54,30 @@
                                                 </div>
                                                 <div class="select reg__input">
                                                     <label class="form__label" for="status">Сімейний стан</label>
-                                                    <select required name="status">
-                                                        <option value="" hidden disabled selected>Одружений
-                                                        </option>
-                                                        <option>Холост</option>
-                                                        <option>В браке</option>
-                                                    </select>
-                                                    <div class="select_arrow">
+                                                    <div class="custom-select">
+                                                        <div class="custom-select__header">
+                                                            <span class="custom-select__val">
+                                                                Выберет из списка
+                                                            </span>
+                                                            <div class="select_arrow">
+                                                            </div>
+                                                        </div>
+                                                        <div class="custom-select__body">
+                                                            <div class="custom-select__item current">
+                                                                <span class="custom-select__choose">
+                                                                    Одружений
+                                                                </span>
+                                                                <input class="custom-select__radio" value="Одружений"
+                                                                    name="family-status" type="radio">
+                                                            </div>
+                                                            <div class="custom-select__item">
+                                                                <span class="custom-select__choose">
+                                                                    Холост
+                                                                </span>
+                                                                <input class="custom-select__radio" value="Холост"
+                                                                    name="family-status" type="radio">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="reg__input">
@@ -246,6 +263,7 @@
         @@include('components/_popups.html')
     </div>
     @@include('components/_scripts.html')
+    <script src="js/select.js"></script>
 </body>
 
 </html>
